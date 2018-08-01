@@ -1,0 +1,66 @@
+/* todo : change background image on hover of how to save the world */
+/* todo : change background depending on threatened species */
+:root {
+    --bodyBackgroundColor : hsl(0,0%,90%);
+    --headerBackgroundColor : hsl(300,50%,75%);
+    --footerBackgroundColor : hsl(120,50%,75%);
+    --formBackgroundColor : hsl(0,0%,95%);
+}
+body {
+    background-color: var(--bodyBackgroundColor);
+}
+main {
+    width:99vw;
+    display:grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 70vh 1fr 50vh;
+    grid-template-areas: 
+    "header header header"
+    "left center right"
+    "footer footer footer"
+}
+header {
+    background-color: var(--headerBackgroundColor);
+    grid-area: header;
+    background-size: cover;
+}
+h2 {
+    margin-left:2vw;
+}
+form {
+    grid-area: center;
+    margin-top:-20vh;
+    margin-bottom:-20vh;
+    border-radius:7px;
+    z-index:2;
+    background-color: var(--formBackgroundColor);
+    box-shadow : 0 20px 20px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.19);
+}
+fieldset {
+    margin:2vw 4vw;
+}
+fieldset > * {
+    margin-top:1vw;
+    font-size: 1.2vw;
+}
+#message {
+    width:100%;
+}
+button {
+    padding:1vw;
+    margin:2vw 4vw;
+}
+.rhino {
+   background-image:url(rhino.jpg); 
+}
+.tiger {
+    background-image: url(tiger2.jpg);
+    /* background-position: 50% 70%; */
+}
+label {
+    display:block;
+}
+footer {
+    background-color: var(--footerBackgroundColor);
+    grid-area: footer;
+}

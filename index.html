@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FCC Survey</title>
+        <link rel="stylesheet" href="index.css" type="text/css" media="screen" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    </head>
+    <body>
+        <main id="main">
+            <header class="tiger">
+                <h1 id="title">Save The World Anonymous Survey</h1>
+                <p id="description">Let us know how we could save the world today.</p>
+            </header>
+            <form id="survey-form">
+                <h2>Why save the world ?</h2>
+                <fieldset>
+                    <legend>What's your favorite threatened specie ?</legend>
+                    <select id="dropdown" name="species" required>
+                        <option value="rhino">Black rhino</option>
+                        <option value="elephant">Elephant</option>
+                        <option value="gorilla">Gorilla</option>
+                        <option value="chimpanzee">Champanzee</option>
+                        <option value="thon">Bluefin Tuna</option>
+                        <option value="shark">Great White Shark</option>
+                        <option value="whale">Blue whale</option>
+                        <option value="lion">Lion</option>
+                        <option value="leopard">Leopard</option>
+                        <option value="tiger">Tiger</option>
+                        <option value="bear">Polar Bear</option>
+                        <option value="panda">Panda</option>
+                    </select>
+                </fieldset>
+
+                <h2>How to save the world ?</h2>
+                <fieldset>
+                    <legend>What could we do to save the world ?</legend>
+                    <label for="permaculture">
+                        <input id="permaculture" type="radio" name="save" value="permaculture">Individual Permaculture
+                    </label>
+                    <label for="bees">
+                        <input id="bees" type="radio" name="save" value="bees">Save the bees
+                    </label>
+                    <label for="see">
+                        <input id="see" type="radio" name="save" value="see">Clean the oceans
+                    </label>
+                    <label for="oil">
+                        <input id="oil" type="radio" name="save" value="oil_civilization">Abandon Oil civilization
+                    </label>
+                    <label for="mars">
+                        <input id="mars" type="radio" name="save" value="mars">Colonize Mars
+                    </label>
+                    <label for="mankind">
+                        <input id="mankind" type="radio" name="save" value="mankind">Erase Mankind
+                    </label>
+                    <label for="late">
+                        <input id="late" type="radio" name="save" value="late">Too late, just live and let die...
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What could <span id="you">you</span> do to save the world ?</legend>
+                    <label for="frigo">
+                        <input id="frigo" type="checkbox" name="frigo">Only have one fridge
+                    </label>
+                    <label for="car">
+                        <input id="car" type="checkbox" name="car">Leave the car at home
+                    </label>
+                    <label for="plastics">
+                        <input id="plastics" type="checkbox" name="plastics">Stop using plastics things
+                    </label>
+                    <label for="phone">
+                        <input id="phone" type="checkbox" name="phone">Stop changing phone every year
+                    </label>
+                    <label for="shutdown">
+                        <input id="shutdown" type="checkbox" name="shutdown">Shut down things when leaving office or home
+                    </label>
+                    <label for="vegetables">
+                        <input id="vegetables" type="checkbox" name="vegetables">Eat only locals vegetables
+                    </label>
+                    <label for="nothing">
+                        <input id="nothing" type="checkbox" name="nothing" disabled>Nothing, the others must do something, not me
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Please explain to your childrens why we fucked up :</legend>
+                    <textarea id="message" name="message" rows="10" cols="80"></textarea>
+                </fieldset>
+
+                <h2>Personnal anonymous informations</h2>
+                <fieldset>
+                    <legend>Please enter some anonymous datas :</legend>
+                    <label id="name-label" for="name">Name :
+                        <input type="text" name="name" placeholder="Please enter your name" required>
+                    </label>
+                    <label id="email-label" for="name">Email :
+                        <input type="email" name="email" placeholder="Please enter your email">
+                    </label>
+                    <label id="number-label" for="name">Credit card number :
+                        <input type="number" name="number" placeholder="Please enter your credit card number">
+                    </label>
+                </fieldset>
+
+                <button type="submit">Send the survey</button>
+            </form>
+            <footer>Logos</footer>
+        </main>
+    </body>
+</html>
