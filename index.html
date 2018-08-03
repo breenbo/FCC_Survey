@@ -8,11 +8,10 @@
     </head>
     <body>
         <main id="main">
-            <header class="tiger">
-                <h1 id="title">Save The World Anonymous Survey</h1>
-                <p id="description">Let us know how we could save the world today.</p>
+            <header class="">
             </header>
             <form id="survey-form">
+                <h1 id="title">Save The World Survey</h1>
                 <h2>Why save the world ?</h2>
                 <fieldset>
                     <legend>What's your favorite threatened specie ?</legend>
@@ -20,15 +19,9 @@
                         <option value="rhino">Black rhino</option>
                         <option value="elephant">Elephant</option>
                         <option value="gorilla">Gorilla</option>
-                        <option value="chimpanzee">Champanzee</option>
-                        <option value="thon">Bluefin Tuna</option>
-                        <option value="shark">Great White Shark</option>
-                        <option value="whale">Blue whale</option>
                         <option value="lion">Lion</option>
-                        <option value="leopard">Leopard</option>
                         <option value="tiger">Tiger</option>
                         <option value="bear">Polar Bear</option>
-                        <option value="panda">Panda</option>
                     </select>
                 </fieldset>
 
@@ -91,20 +84,41 @@
                 <h2>Personnal anonymous informations</h2>
                 <fieldset>
                     <legend>Please enter some anonymous datas :</legend>
-                    <label id="name-label" for="name">Name :
-                        <input type="text" name="name" placeholder="Please enter your name" required>
+                    <label id="name-label" for="name">Name :<br/>
+                        <input class="personal" type="text" name="name" placeholder="Please enter your name" required>
                     </label>
-                    <label id="email-label" for="name">Email :
-                        <input type="email" name="email" placeholder="Please enter your email">
+                    <label id="email-label" for="name">Email :<br/>
+                        <input class="personal" type="email" name="email" placeholder="Please enter your email">
                     </label>
-                    <label id="number-label" for="name">Credit card number :
-                        <input type="number" name="number" placeholder="Please enter your credit card number">
+                    <label id="number-label" for="name">Credit card number :<br/>
+                        <input class="personal" type="text" name="number" placeholder="Please enter your credit card number">
                     </label>
                 </fieldset>
 
                 <button type="submit">Send the survey</button>
             </form>
-            <footer>Logos</footer>
+            <footer>
+                <div id="wiki"><a id="tribute-link" href="" target="_blank" >Learn more on Wikipedia</a></div>
+                <a href="https://twitter.com/berrehuel" target="_blank">
+                    <svg id="twitter" class="logo" height="376.9" width="376.9" viewbox="0 0 377 377">
+                      <circle id="twitter_back" cx="156.5" cy="123.4" r="188.4" transform="translate(32 65)" fill="hsl(260,50%,90%)"/>
+                      <path id="twitter_draw" d="M132.5 302.9c108.2 0 167.3-89.6 167.3-167.4 0-2.5 0-5-.2-7.6A119.6 119.6 0 0 0 329 97.5a117.3 117.3 0 0 1-33.8 9.2 59 59 0 0 0 25.9-32.5 118 118 0 0 1-37.4 14.3 58.7 58.7 0 0 0-100.2 53.6A167 167 0 0 1 62.3 80.7a58.7 58.7 0 0 0 18.2 78.5c-9.7-.3-18.7-3-26.6-7.4v.8a58.8 58.8 0 0 0 47.1 57.6 58.9 58.9 0 0 1-26.5 1 58.9 58.9 0 0 0 55 40.9 118 118 0 0 1-87.2 24.4c26 16.6 57 26.4 90.2 26.4" fill="hsl(260,100%,60%)"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/breenbo" target="_blank">
+                    <svg id="github" class="logo" height="1024" width="1024" viewbox="0 0 1024 1024">
+                      <circle id="github_draw" cx="512.4" cy="512.4" r="512" fill="hsl(260,100%,60%)"/>
+                      <path id="github_back" d="M512 0a512 512 0 0 0-161.8 997.8c25.6 4.7 34.9-11.1 34.9-24.6 0-12.2-.5-52.6-.7-95.3-142.4 31-172.5-60.4-172.5-60.4-23.3-59.1-56.8-74.9-56.8-74.9-46.6-31.7 3.5-31.1 3.5-31.1 51.4 3.6 78.5 52.8 78.5 52.8 45.7 78.2 119.8 55.6 149 42.5 4.6-33 17.9-55.7 32.5-68.4-113.7-13-233.3-56.9-233.3-253 0-56 20-101.6 52.7-137.5-5.2-13-22.8-65 5-135.6 0 0 43-13.7 140.9 52.5a487.4 487.4 0 0 1 256.3.1c97.7-66.3 140.7-52.5 140.7-52.5C808.9 283 791.3 335 786 348a197.6 197.6 0 0 1 52.6 137.4c0 196.7-119.7 240-233.8 252.7 18.5 15.9 34.8 47 34.8 94.8 0 68.4-.7 123.6-.7 140.5 0 13.6 9.3 29.5 35.2 24.5A512.2 512.2 0 0 0 512 0z" fill="hsl(260,50%,90%)"/>
+                    </svg>
+                </a>
+                <a href="https://www.freecodecamp.org/breenbo" target="_blank">
+                    <svg id="fcc" class="logo" width="47.1" height="47" viewbox="0 0 47 47">
+                      <path id="fcc_back" d="M46.4 17.6a23.4 23.5 0 0 1-16.5 28.6A23.4 23.5 0 0 1 1.2 30a23.4 23.5 0 0 1 15.6-29A23.4 23.5 0 0 1 46 16" fill="hsl(260,50%,90%)"/>
+                      <path id="fcc_draw" d="M8 40.7c-.8-.2-2-1.3-3.3-3A23.4 23.4 0 0 1 .2 25v-4.3a21.7 21.7 0 0 1 7-14c.8-.7 1.4-.8 2-.3l.2.6c0 .5-.2.9-1.3 2a19.3 19.3 0 0 0-5.4 14.5 22.3 22.3 0 0 0 2.5 10C6 35 6.7 35.9 8 37.3c1.1 1.3 1.4 1.8 1.4 2.3 0 .5-.3 1-.8 1h-.5zm30.7 0c-.3 0-.7-.6-.7-.9-.1-.4.1-.8 1.3-2.1l1.6-2c2.2-2.8 3.4-6 3.7-9.7v-5.2a20 20 0 0 0-5.2-11.2c-1-1.1-1.3-1.6-1.4-2-.1-.4 0-.7.3-1 .3-.5.8-.5 1.5-.2.8.5 2 1.6 3.2 3.5 2.6 3.6 3.9 7.6 4.2 12.7.3 4.3-.7 8.7-2.8 12.3-1.4 2.5-3.6 5-4.7 5.6-.3.2-.8.2-1 .2zM13.1 38c-.7-.2-1-1-.9-1.7.1-.4.5-.9 1-1h22.7c.4.1.9.6 1 1 0 .7-.2 1.3-.7 1.6l-.3.2H13.1zm8.7-5.6A8.8 8.8 0 0 1 17 28c-.5-1-.8-2.3-.8-3.5 0-1.5.6-3 2.3-6l2-3.4c.4-1.2.6-1.8.6-2.8 0-.9-.1-1.4-.5-2.1l-1.2-1.4c-.4-.2-.5-.5-.2-.7.5-.3 1.8-.1 3 .4 1.3.7 2.2 1.7 2.9 3 .4.9.6 1.6 1 3.7.3 2.4.7 3.1 1.4 3 .4 0 .7-.2.8-.5.3-.5.2-1.2-.3-2.3-.5-1-.4-1.2 0-1a7 7 0 0 1 1.8 1.4 9.8 9.8 0 0 1 2.5 5.3c.2 1.1.2 3 0 4a9.3 9.3 0 0 1-1.2 3.2c-.7 1.1-2 2.5-3.1 3-.5.3-.7.3-.9.1-.3-.2-.2-.4.4-1 1-1.1 1.4-1.9 1.7-2.8.5-1.3.2-3.1-.5-4.3-.3-.5-.7-1-1-1l.2 1 .1.8c0 .7-1 1.2-1.8 1-.6-.3-1-1-.9-2l.1-1.3c0-.8 0-.8-.2-1.3-.4-.8-1.4-1.7-2-1.7-.1 0-.2 0-.2.2l.2.3c.5.5.6 1.6.2 2.6-.2.6-.5 1-1.4 1.8-1.3 1.1-1.7 1.7-2 2.5v1.3c0 1.3.3 2.1.8 3 .5.6 1 1 1.6 1.3.4.2.4.2.4.4s-.2.3-.4.3l-.6-.2z" fill="hsl(260,100%,60%)"/>
+                    </svg>
+                </a>
+            </footer>
         </main>
+        <script src="index.js"></script>
     </body>
 </html>

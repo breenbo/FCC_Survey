@@ -1,13 +1,17 @@
-/* todo : change background image on hover of how to save the world */
-/* todo : change background depending on threatened species */
 :root {
     --bodyBackgroundColor : hsl(0,0%,90%);
     --headerBackgroundColor : hsl(300,50%,75%);
+    --headerTitleColor : hsl(0,0%,20%);
     --footerBackgroundColor : hsl(120,50%,75%);
     --formBackgroundColor : hsl(0,0%,95%);
 }
+@font-face {
+    font-family: days;
+    src:url(font/28_Days_Later.ttf);
+}
 body {
     background-color: var(--bodyBackgroundColor);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 main {
     width:99vw;
@@ -23,9 +27,19 @@ header {
     background-color: var(--headerBackgroundColor);
     grid-area: header;
     background-size: cover;
+    box-shadow : 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+#title {
+    font-family: days;
+    font-weight: normal;
+    font-size:6vw;
+    margin-top:0;
+    color:var(--headerTitleColor);
+    text-align: center;
 }
 h2 {
     margin-left:2vw;
+    font-size: 2vw;
 }
 form {
     grid-area: center;
@@ -38,6 +52,7 @@ form {
 }
 fieldset {
     margin:2vw 4vw;
+    border-radius:5px;
 }
 fieldset > * {
     margin-top:1vw;
@@ -46,16 +61,36 @@ fieldset > * {
 #message {
     width:100%;
 }
+.personal {
+    width : 85%;
+}
 button {
     padding:1vw;
     margin:2vw 4vw;
 }
 .rhino {
-   background-image:url(rhino.jpg); 
+   background-image:url(img/rhino.jpg); 
+   background-position: 0% 60%;
 }
 .tiger {
-    background-image: url(tiger2.jpg);
-    /* background-position: 50% 70%; */
+   background-image: url(img/tiger.jpg);
+   background-position: 0% 40%;
+}
+.elephant {
+   background-image: url(img/elephant.jpg);
+   background-position: 0% 65%;
+}
+.gorilla {
+    background-image: url(img/gorilla.jpg);
+    background-position: 0 75%;
+}
+.bear {
+    background-image: url(img/polar.jpg);
+    background-position: 0 75%;
+}
+.lion {
+    background-image: url(img/lion.jpg);
+    background-position: 0 25%;
 }
 label {
     display:block;
@@ -63,4 +98,12 @@ label {
 footer {
     background-color: var(--footerBackgroundColor);
     grid-area: footer;
+    display:grid;
+    grid-template-columns: 1fr repeat(3,10vw);
+    align-items:end;
+    justify-items:center;
+}
+.logo {
+    width:8vw;
+    height:auto;
 }
