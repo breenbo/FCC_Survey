@@ -3,6 +3,11 @@
     --headerBackgroundColor : hsl(300,50%,75%);
     --headerTitleColor : hsl(0,0%,20%);
     --formBackgroundColor : hsl(0,0%,95%);
+    --titleFSI : 6vw;
+    --h2FSI : 2vw;
+    --fieldsetFSI : 1.2vw;
+    --buttonFSI : 1.5vw;
+    --tributeLinkFSI : 2vw;
 }
 @font-face {
     font-family: days;
@@ -58,14 +63,14 @@ main {
 #title {
     font-family: days;
     font-weight: normal;
-    font-size:6vw;
+    font-size:var(--titleFSI);
     margin-top:0;
     color:var(--headerTitleColor);
     text-align: center;
 }
 h2 {
     margin-left:2vw;
-    font-size: 2vw;
+    font-size: var(--h2FSI);
 }
 form {
     grid-area: center;
@@ -82,19 +87,19 @@ fieldset {
 }
 fieldset > * {
     margin-top:1vw;
-    font-size: 1.2vw;
+    font-size: var(--fieldsetFSI);
 }
 #message {
     width:100%;
 }
 .personal {
     width : 85%;
-    font-size: 1.2vw;
+    font-size: var(--fieldsetFSI);
 }
 button {
     padding:1vw;
     margin:2vw 4vw;
-    font-size:1.5vw;
+    font-size:var(--buttonFSI);
 }
 .big_shadow {
     box-shadow : 0 20px 20px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.19);
@@ -140,9 +145,38 @@ footer {
     padding-right:2vw;
 }
 #tribute_link {
-  font-size: 2vw;
+  font-size: var(--tributeLinkFSI);
 }
 .logo {
     width:8vw;
     height:auto;
+}
+
+
+@media (max-width:900px) {
+  :root {
+    --titleFSI : 8vw;
+    --h2FSI : 4vw;
+    --fieldsetFSI : 3vw;
+    --buttonFSI : 4vw;
+    --tributeLinkFSI : 3vw;
+  }
+  main {
+      grid-template-columns:1fr;
+      grid-gap:1vw;
+      grid-template-areas:
+      "header"
+      "center"
+      "footer";
+  }
+  .oil, .see, .bees, .permaculture, .mankind, .late, .mars {
+    background-image: url();
+  }
+  .logo {
+    width:15vw;
+  }
+  footer {
+    grid-template-columns: 1fr repeat(3,16vw);
+    padding-bottom:2vw;
+  }
 }
