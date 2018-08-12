@@ -2,7 +2,6 @@
     --bodyBackgroundColor : hsl(0,0%,90%);
     --headerBackgroundColor : hsl(300,50%,75%);
     --headerTitleColor : hsl(0,0%,20%);
-    --footerBackgroundColor : hsl(120,50%,75%);
     --formBackgroundColor : hsl(0,0%,95%);
 }
 @font-face {
@@ -13,21 +12,48 @@ body {
     background-color: var(--bodyBackgroundColor);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#general_background {
+    position:absolute;
+    top:42.4vw;
+    width:99vw;
+    height:100%;
+    z-index:0;
+    background-size: cover;
+}
+.oil {
+    background-image:url(img/oil.jpg);
+}
+.see {
+    background-image:url(img/see.jpg);
+}
+.bees {
+    background-image: url(img/bees.jpg);
+}
+.permaculture {
+    background-image: url(img/permaculture.jpg);
+}
+.mars {
+    background-image: url(img/mars.jpg);
+}
+.mankind {
+    background-image: url(img/mankind.jpg);
+}
+.late {
+    background-color:black;
+}
 main {
     width:99vw;
     display:grid;
     grid-template-columns: 20vw 60vw 20vw;
-    grid-template-rows: 70vh 1fr 50vh;
+    grid-template-rows: 35vw 1fr 25vw;
     grid-template-areas: 
     "header header header"
     "left center right"
     "footer footer footer"
 }
-header {
-    background-color: var(--headerBackgroundColor);
+#header {
     grid-area: header;
     background-size: cover;
-    box-shadow : 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.19);
 }
 #title {
     font-family: days;
@@ -43,15 +69,15 @@ h2 {
 }
 form {
     grid-area: center;
-    margin-top:-20vh;
-    margin-bottom:-20vh;
+    margin-top:-15vw;
+    margin-bottom:-7vw;
     border-radius:7px;
     z-index:2;
     background-color: var(--formBackgroundColor);
-    box-shadow : 0 20px 20px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.19);
+    opacity:0.95;
 }
 fieldset {
-    margin:2vw 4vw;
+    margin:1vw 4vw;
     border-radius:5px;
 }
 fieldset > * {
@@ -63,10 +89,18 @@ fieldset > * {
 }
 .personal {
     width : 85%;
+    font-size: 1.2vw;
 }
 button {
     padding:1vw;
     margin:2vw 4vw;
+    font-size:1.5vw;
+}
+.big_shadow {
+    box-shadow : 0 20px 20px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.19);
+}
+.shadow {
+   box-shadow : 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.19);
 }
 .rhino {
    background-image:url(img/rhino.jpg); 
@@ -102,6 +136,11 @@ footer {
     grid-template-columns: 1fr repeat(3,10vw);
     align-items:end;
     justify-items:center;
+    padding-bottom:5vw;
+    padding-right:2vw;
+}
+#tribute_link {
+  font-size: 2vw;
 }
 .logo {
     width:8vw;

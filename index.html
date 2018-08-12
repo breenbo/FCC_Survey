@@ -8,14 +8,15 @@
     </head>
     <body>
         <main id="main">
-            <header class="">
+            <header id="header" class="">
             </header>
-            <form id="survey-form">
+            <form id="survey-form" class='big_shadow'>
                 <h1 id="title">Save The World Survey</h1>
                 <h2>Why save the world ?</h2>
                 <fieldset>
                     <legend>What's your favorite threatened specie ?</legend>
                     <select id="dropdown" name="species" required>
+                        <option value='' selected disabled>Select</option>
                         <option value="rhino">Black rhino</option>
                         <option value="elephant">Elephant</option>
                         <option value="gorilla">Gorilla</option>
@@ -26,7 +27,7 @@
                 </fieldset>
 
                 <h2>How to save the world ?</h2>
-                <fieldset>
+                <fieldset id="field_save">
                     <legend>What could we do to save the world ?</legend>
                     <label for="permaculture">
                         <input id="permaculture" type="radio" name="save" value="permaculture">Individual Permaculture
@@ -38,7 +39,7 @@
                         <input id="see" type="radio" name="save" value="see">Clean the oceans
                     </label>
                     <label for="oil">
-                        <input id="oil" type="radio" name="save" value="oil_civilization">Abandon Oil civilization
+                        <input id="oil" type="radio" name="save" value="oil">Abandon Oil civilization
                     </label>
                     <label for="mars">
                         <input id="mars" type="radio" name="save" value="mars">Colonize Mars
@@ -57,7 +58,7 @@
                         <input id="frigo" type="checkbox" name="frigo">Only have one fridge
                     </label>
                     <label for="car">
-                        <input id="car" type="checkbox" name="car">Leave the car at home
+                        <input id="car" type="checkbox" name="car">Leave the car at home and buy a bicycle
                     </label>
                     <label for="plastics">
                         <input id="plastics" type="checkbox" name="plastics">Stop using plastics things
@@ -71,13 +72,16 @@
                     <label for="vegetables">
                         <input id="vegetables" type="checkbox" name="vegetables">Eat only locals vegetables
                     </label>
+                    <label for="rocket">
+                        <input id="rocket" type="checkbox" name="rocket">Build a rocket to go to mars on my own
+                    </label>
                     <label for="nothing">
                         <input id="nothing" type="checkbox" name="nothing" disabled>Nothing, the others must do something, not me
                     </label>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Please explain to your childrens why we fucked up :</legend>
+                    <legend>Please explain to your childrens why we f***ed up :</legend>
                     <textarea id="message" name="message" rows="10" cols="80"></textarea>
                 </fieldset>
 
@@ -98,7 +102,7 @@
                 <button type="submit">Send the survey</button>
             </form>
             <footer>
-                <div id="wiki"><a id="tribute-link" href="" target="_blank" >Learn more on Wikipedia</a></div>
+                <div id="wiki"><a id="tribute_link" href="" target="_blank" >Learn more on Wikipedia</a></div>
                 <a href="https://twitter.com/berrehuel" target="_blank">
                     <svg id="twitter" class="logo" height="376.9" width="376.9" viewbox="0 0 377 377">
                       <circle id="twitter_back" cx="156.5" cy="123.4" r="188.4" transform="translate(32 65)" fill="hsl(260,50%,90%)"/>
@@ -119,6 +123,7 @@
                 </a>
             </footer>
         </main>
+        <div id="general_background" class=""><div>
         <script src="index.js"></script>
     </body>
 </html>
